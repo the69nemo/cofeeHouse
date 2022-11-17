@@ -1,13 +1,15 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/poppins/poppins.css);
+@import url(./vendor/fonts/playfair_display/playfair_display.css);
+
+:root {
+  --white: #FFFFFF;
+  --gray: #B8B8B8;
+  --orange: #FFB577;
+  --plaufairDisplay: 'Playfair Display', serif;
+  --poppins: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
 }
