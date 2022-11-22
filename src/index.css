@@ -1,6 +1,7 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/poppins/poppins.css);
 @import url(./vendor/fonts/playfair_display/playfair_display.css);
+@import url(./vendor/fonts/gilroy_bold/gilroy.css);
 
 :root {
   --white: #FFFFFF;
@@ -9,6 +10,7 @@
   --softDark: #2E2D33;
   --playfairDisplay: 'Playfair Display', serif;
   --poppins: 'Poppins', sans-serif;
+  --gilroy: 'Gilroy', sans-serif;
 }
 
 * {
