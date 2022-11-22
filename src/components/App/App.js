@@ -1,7 +1,8 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Home from '../Home/Home';
-import { Route, Switch } from 'react-router-dom';
+
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route path='/' exact>
           <Home />
         </Route>
+
       </Switch>
     </div>
   );

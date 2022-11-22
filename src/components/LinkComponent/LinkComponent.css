@@ -1,0 +1,17 @@
+.link {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: var(--orange);
+  color: var(--softDark);
+  font-family: var(--poppins);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.link__text {
+  margin-right: 8px;
+}
