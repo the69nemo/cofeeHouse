@@ -2,6 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   color: var(--white);
+  padding-bottom: 160px;
 }
 
 .aboutUs__title-wrapper {
@@ -59,3 +60,66 @@
   color: var(--gray);
 }
 
+.aboutUs__card-wrapper {
+  margin: 40px 0 32px;
+  display: flex;
+}
+
+.aboutUs__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aboutUs__card:not(:last-child) {
+  margin-right: 32px;
+}
+
+.aboutUs__card-title-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.aboutUs__card-title {
+  margin: 0 0 0 7px;
+  font-family: var(--poppins);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--lightGray);
+}
+
+.aboutUs__card-text {
+  margin: 0;
+  color: var(--gray);
+  font-family: var(--poppins);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.aboutUs__card-text:last-child {
+  margin-top: 15px;
+}
+
+.aboutUs__right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, auto);
+  column-gap: 67px;
+}
+
+.aboutUs__img {
+  margin-top: -12px;
+  object-fit: cover;
+}
+
+.aboutUs__img:first-child {
+  grid-area: 2 / 1 / 8 / 2;
+}
+
+.aboutUs__img:last-child {
+  grid-area: 1 / 2 / 7 / 3;
+}
