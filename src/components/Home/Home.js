@@ -3,6 +3,7 @@ import "./Home.css";
 import Header from "../Header/Header";
 import Promo from "../Promo/Promo";
 import MoreAboutUs from "../MoreAboutUs/MoreAboutUs";
+import Serving from "../Serving/Serving";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <Header />
       <Promo />
       <MoreAboutUs />
+      <Serving />
     </>
   );
 }

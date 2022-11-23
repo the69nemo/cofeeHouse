@@ -1,0 +1,116 @@
+.serving__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  color: var(--white);
+  padding-bottom: 160px;
+}
+
+.serving__title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.serving__title {
+  margin: 0;
+  font-family: var(--playfairDisplay);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--orange);
+  text-transform: uppercase;
+}
+
+.serving__title-line {
+  width: 48px;
+  border: 1px solid var(--white);
+  margin-left: 16px;
+}
+
+.serving__content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 64px;
+}
+
+.serving__content-title {
+  margin: 0;
+  font-family: var(--playfairDisplay);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.serving__content-description {
+  margin: 0;
+  max-width: 549px;
+  font-family: var(--poppins);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--gray);
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.serving__card-wrapper {
+  margin: 0;
+  grid-area: 2 / 1 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 128px;
+  background-color: rgba(0, 0, 0, 0.16);
+  padding: 0 65px;
+  list-style: none;
+}
+
+.serving__card {
+  padding: 64px 0;
+}
+
+.serving__card:not(:nth-child(3n)) {
+  position: relative;
+}
+
+.serving__card:not(:nth-child(3n))::after {
+  content: '';
+  position: absolute;
+  right: -64px;
+  top: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.serving__card-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 181, 119, 0.07);
+  border-radius: 50%;
+}
+
+.serving__card-title {
+  margin: 24px 0 0 0;
+  font-family: var(--playfairDisplay);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.serving__card-description {
+  margin: 12px 0 0 0;
+  color: var(--gray);
+  font-family: var(--poppins);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
