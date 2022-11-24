@@ -1,7 +1,20 @@
 import React from "react";
 import "./OurMenu.css";
+import data from "../../data/data.json";
+import ProductCard from "../ProductCard/ProductCard";
+import LinkComponent from '../LinkComponent/LinkComponent'
 
 function OurMenu() {
+
+  const cards = data.map((card) => (
+    <ProductCard
+      key={card.id}
+      title={card.title}
+      img={card.img}
+      prise={card.prise}
+    />
+  ));
+
   return (
     <section className="menu">
       <div className="menu__container">
@@ -19,7 +32,15 @@ function OurMenu() {
             </p>
             <span className="menu__content-span">Most Popular Picks</span>
           </div>
-          <div className="menu__content-bottom"></div>
+          <div className="menu__content-bottom">
+            <div className="menu_card-wrapper">
+              {cards}
+            </div>
+            <LinkComponent
+              text='View Menu'
+              path='menu'
+            />
+          </div>
         </div>
       </div>
     </section>

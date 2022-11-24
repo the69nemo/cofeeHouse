@@ -68,3 +68,18 @@
   line-height: 21px;
   align-self: flex-end;
 }
+
+.menu__content-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_card-wrapper {
+  margin-bottom: 40px;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 405px);
+  grid-template-rows: auto;
+  gap: 32px;
+}

@@ -9,6 +9,7 @@
   --orange: #FFB577;
   --softDark: #2E2D33;
   --lightGray: #C4E4EA;
+  --bgSoftDark: #1F1D21;
   --playfairDisplay: 'Playfair Display', serif;
   --poppins: 'Poppins', sans-serif;
   --gilroy: 'Gilroy', sans-serif;
@@ -16,4 +17,9 @@
 
 * {
   box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
 }

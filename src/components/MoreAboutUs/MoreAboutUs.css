@@ -98,6 +98,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  box-orient: vertical
 }
 
 .aboutUs__card-text:last-child {
