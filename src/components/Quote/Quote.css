@@ -1,0 +1,100 @@
+.quote {
+  max-width: 1600px;
+  background-color: var(--bgSoftDark);
+  margin: 0 auto;
+}
+
+.quote__container {
+  margin: 0 auto;
+  color: var(--white);
+  display: grid;
+  grid-template-columns: minmax(auto, 675px) minmax(auto, 925px);
+  grid-template-rows: minmax(auto, 668px);
+}
+
+.quote__left {
+  padding: 80px 78px 80px 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.quote__title {
+  margin: 0;
+  font-family: var(--gilroy);
+  font-size: 72px;
+  line-height: 92px;
+}
+
+.quote__description {
+  margin: 0;
+  font-family: var(--playfairDisplay);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  opacity: 0.87;
+}
+
+.quote__signature-wrapper {
+  width: 100%;
+  margin-top: 68px;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.quote__name {
+  margin: 0;
+  font-family: var(--poppins);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: .87;
+}
+
+.quote__signature {
+  margin: 0;
+  margin-top: 4px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  opacity: .6;
+}
+
+.quote__avatar-wrapper {
+  background-image: url(../../images/avatar.jpg);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.quote__right {
+  position: relative;
+}
+
+.quote__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.quote__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: url(../../images/Play.svg) no-repeat center;
+  height: 60px;
+  width: 60px;
+  border: 0;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+.quote__btn:hover {
+  transform: scale(1.3);
+}

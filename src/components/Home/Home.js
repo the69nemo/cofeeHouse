@@ -5,8 +5,9 @@ import Promo from "../Promo/Promo";
 import MoreAboutUs from "../MoreAboutUs/MoreAboutUs";
 import Serving from "../Serving/Serving";
 import OurMenu from "../OurMenu/OurMenu";
+import Quote from "../Quote/Quote";
 
-function Home() {
+function Home({handleOpenModal}) {
   return (
     <>
       <Header />
@@ -14,6 +15,9 @@ function Home() {
       <MoreAboutUs />
       <Serving />
       <OurMenu />
+      <Quote
+        handleOpenModal={handleOpenModal}
+      />
     </>
   );
 }
