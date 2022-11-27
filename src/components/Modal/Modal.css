@@ -5,11 +5,16 @@
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, .75);
-  display: none;
+  /* display: none; */
+  visibility: hidden;
+  transition: visibility 0.15s linear, opacity .32s linear;
+  opacity: 0;
 }
 
 .open {
-  display: block;
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal {

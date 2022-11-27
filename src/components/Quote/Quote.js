@@ -7,7 +7,7 @@ function Quote({handleOpenModal}) {
     <section className="quote">
       <div className="quote__container">
         <div className="quote__left">
-          <h2 className="quote__title">"</h2>
+          <h2 className="quote__title"><i>"</i></h2>
           <p className="quote__description">
             Edit this text to make it your own. To edit, simply click directly
             on the text to start adding your own words. You can move the text by
