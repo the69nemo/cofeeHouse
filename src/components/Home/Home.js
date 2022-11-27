@@ -6,6 +6,7 @@ import MoreAboutUs from "../MoreAboutUs/MoreAboutUs";
 import Serving from "../Serving/Serving";
 import OurMenu from "../OurMenu/OurMenu";
 import Quote from "../Quote/Quote";
+import Read from "../Read/Read";
 
 function Home({handleOpenModal}) {
   return (
@@ -18,6 +19,7 @@ function Home({handleOpenModal}) {
       <Quote
         handleOpenModal={handleOpenModal}
       />
+      <Read />
     </>
   );
 }

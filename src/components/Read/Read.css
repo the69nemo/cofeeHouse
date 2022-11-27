@@ -1,0 +1,22 @@
+.read__container {
+  margin: 0 auto;
+  padding: 160px 0 160px;
+  max-width: 1280px;
+  color: var(--white);
+}
+
+.read__title {
+  margin: 0 0 64px 0;
+  font-family: var(----playfairDisplay);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: capitalize;
+}
+
+.read__cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 405px);
+  column-gap: 32px;
+}
