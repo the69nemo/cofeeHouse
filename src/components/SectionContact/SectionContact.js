@@ -31,7 +31,16 @@ function SectionContact() {
             </li>
           </ul>
         </div>
-        <div className="contact__right"></div>
+        <div className="contact__right">
+          <div className="contact__right-overlay">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac3fd6cb621958fd1bab8c01e9a9a446e27b3c28dceaeb45f90bed9bb404b14da&amp;source=constructor"
+              width="100%"
+              height="532"
+              frameborder="0"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

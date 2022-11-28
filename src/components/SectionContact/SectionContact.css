@@ -1,15 +1,16 @@
 .contact__container {
   margin: 0 auto;
+  padding-bottom: 160px;
   max-width: 1280px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: minmax(0, 441px) 1fr;
   color: var(--white);
-  background-color: var(--bgSoftDark);
 }
 
 .contact__left {
   max-width: 441px;
   padding: 80px 64px;
+  background-color: var(--bgSoftDark);
 }
 
 .contact__left-container {
@@ -42,4 +43,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+}
+
+.contact__right-overlay {
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 5000;
 }
