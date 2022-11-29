@@ -12,7 +12,7 @@ function Menu() {
       <Header />
       <MenuBaner />
       <MenuLists />
-      {/* <SectionContact /> */}
+      <SectionContact />
       <Footer />
     </>
    );

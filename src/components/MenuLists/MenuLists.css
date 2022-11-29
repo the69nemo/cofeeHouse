@@ -1,4 +1,11 @@
 .menu-lists__container {
   max-width: 1280px;
   margin: 0 auto;
+  padding-bottom: 160px;
+}
+
+.menu-lists__cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
 }
