@@ -58,7 +58,7 @@ function MoreAboutUs() {
                 </p>
               </div>
             </div>
-            <LinkComponent text="View menu" path="home" />
+            <LinkComponent text="View menu" path="menu" />
           </div>
           <div className="aboutUs__right">
             <img className="aboutUs__img" src={Img1} alt="cofee house" />

@@ -1,0 +1,55 @@
+.baner__container {
+  max-width: 1280px;
+  padding: 95px 0 145px;
+  margin: 0 auto;
+  color: var(--white);
+}
+
+.baner__title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.baner__title {
+  margin: 0;
+  font-family: var(--playfairDisplay);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--orange);
+  text-transform: uppercase;
+}
+
+.baner__title-line {
+  width: 48px;
+  border: 1px solid var(--white);
+  margin-left: 16px;
+}
+
+.baner__content {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.baner__content-title {
+  margin: 0;
+  font-family: var(--playfairDisplay);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+}
+
+.baner__content-description {
+  margin: 0;
+  max-width: 500px;
+  place-self: flex-end center;
+  color: var(--gray);
+  font-family: var(--poppins);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}

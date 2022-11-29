@@ -15,7 +15,7 @@ function Promo() {
             Edit this text to make it your own. To edit, simply click directly
             on the text to start adding your own words. You can move the text.
           </p>
-          <LinkComponent text="View menu" path="home" />
+          <LinkComponent text="View menu" path="menu" />
           <ul className="promo__contact-list">
             <li className="promo__contact-item">
               <p className="promo__contact-text">Opening Times</p>

@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import Home from "../Home/Home";
 import Modal from "../Modal/Modal";
+import Menu from "../Menu/Menu";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,11 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Home handleOpenModal={handleOpenModal} />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/menu">
+          <Menu />
         </Route>
       </Switch>
       <Modal
