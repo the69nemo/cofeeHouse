@@ -8,6 +8,7 @@ import OurMenu from "../OurMenu/OurMenu";
 import Quote from "../Quote/Quote";
 import Read from "../Read/Read";
 import SectionContact from "../SectionContact/SectionContact";
+import Footer from "../Footer/Footer";
 
 function Home({handleOpenModal}) {
   return (
@@ -22,6 +23,7 @@ function Home({handleOpenModal}) {
       />
       <Read />
       <SectionContact />
+      <Footer  />
     </>
   );
 }
