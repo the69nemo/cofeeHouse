@@ -1,21 +1,24 @@
-import React from 'react';
-import './Menu.css';
-import Header from '../Header/Header';
+import React from "react";
+import "./Menu.css";
+import Header from "../Header/Header";
 import SectionContact from "../SectionContact/SectionContact";
-import Footer from '../Footer/Footer';
-import MenuBaner from '../MenuBaner/MenuBaner';
-import MenuLists from '../MenuLists/MenuLists';
+import Footer from "../Footer/Footer";
+import MenuBaner from "../MenuBaner/MenuBaner";
+import MenuLists from "../MenuLists/MenuLists";
 
-function Menu() {
+function Menu({ filterProduct, currentProduct }) {
   return (
     <>
       <Header />
       <MenuBaner />
-      <MenuLists />
+      <MenuLists
+        currentProduct={currentProduct}
+        filterProduct={filterProduct}
+      />
       <SectionContact />
       <Footer />
     </>
-   );
+  );
 }
 
 export default Menu;

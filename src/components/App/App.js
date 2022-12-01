@@ -4,9 +4,11 @@ import "./App.css";
 import Home from "../Home/Home";
 import Modal from "../Modal/Modal";
 import Menu from "../Menu/Menu";
+import data from "../../data/data.json";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [currentProduct, setCurrentProduct] = useState(data);
 
   const handleOpenModal = () => setIsOpen(!isOpen);
 
@@ -14,6 +16,15 @@ function App() {
     if (evt.type === "keydown" || evt.target.classList.contains("open")) {
       setIsOpen(false);
     }
+  };
+
+  const filterProduct = (filterParam) => {
+    const productList = data.map((el) => el);
+    if (filterParam === 'all') {
+      return setCurrentProduct(productList);
+    }
+    const filtered = productList.filter(el => el.type === filterParam);
+    return setCurrentProduct(filtered);
   };
 
   return (
@@ -25,7 +36,10 @@ function App() {
       </Switch>
       <Switch>
         <Route path="/menu">
-          <Menu />
+          <Menu
+            currentProduct={currentProduct}
+            filterProduct={filterProduct}
+          />
         </Route>
       </Switch>
       <Modal
