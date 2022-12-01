@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   color: var(--white);
-  padding-bottom: 160px;
+  padding: 160px 0;
 }
 
 .serving__title-wrapper {

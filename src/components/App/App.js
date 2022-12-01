@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
+import data from "../../data/data.json";
 import Home from "../Home/Home";
 import Modal from "../Modal/Modal";
 import Menu from "../Menu/Menu";
-import data from "../../data/data.json";
+import About from "../About/About";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,6 +41,9 @@ function App() {
             currentProduct={currentProduct}
             filterProduct={filterProduct}
           />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
       </Switch>
       <Modal

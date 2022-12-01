@@ -26,7 +26,7 @@ function Footer() {
                 </Link>
               </li>
               <li className="footer__menu-item">
-                <Link to="/aboutus" className="footer__link">
+                <Link to="/about" className="footer__link">
                   About Us
                 </Link>
               </li>

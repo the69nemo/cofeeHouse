@@ -24,7 +24,7 @@ function Header() {
             </Link>
           </li>
           <li className="header__menu-item">
-            <Link to="/aboutus" className="header__link">
+            <Link to="/about" className="header__link">
               About Us
             </Link>
           </li>

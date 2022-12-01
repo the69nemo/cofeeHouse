@@ -1,0 +1,50 @@
+.about-baner {
+  margin-top: 160px;
+}
+
+.about-baner__container {
+  position: relative;
+  max-width: 1280px;
+  padding: 124px 80px;
+  margin: 0 auto;
+  background: url(../../images/BG.jpg) no-repeat center;
+  background-size: cover;
+  color: var(--white);
+  z-index: 0;
+}
+
+.about-baner__title {
+  margin: 0;
+  font-family: var(--playfairDisplay);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  z-index: 5000;
+}
+
+.about-baner__title span {
+  color: var(--orange)
+}
+
+.about-baner__description {
+  max-width: 430px;
+  margin: 24px 0 0 0;
+  color: var(--gray);
+  font-family: var(--poppins);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  z-index: 5000;
+}
+
+.about-baner__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(97.28deg, rgba(25, 22, 27, 0.92) 34.6%, rgba(25, 22, 27, 0) 83.17%);
+  z-index: -1;
+}
